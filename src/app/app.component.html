@@ -1,0 +1,10 @@
+
+<h1>Detect Encoding</h1>
+
+<div class="form-group">
+  <label for="file">Choose File</label>
+  <input type="file" id="file" (change)="fileChange($event)" />
+</div>
+
+<br />
+Your Encoding：{{ encoding$ | async }}
